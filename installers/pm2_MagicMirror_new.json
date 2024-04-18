@@ -1,0 +1,7 @@
+{
+  "apps" : [{
+    "name"        : "MagicMirror",
+    "script"      : "/home/aferraco/MagicMirror/installers/mm.sh",
+    "watch"       : ["/home/aferraco/MagicMirror/config/config.js"]
+  }]
+}
