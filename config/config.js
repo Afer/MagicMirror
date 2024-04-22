@@ -51,7 +51,15 @@ let config = {
 		},
 		{
 			module: "compliments",
-			position: "lower_third"
+			position: "middle_center"
+		},
+		{
+			module: 'MMM-NHL',
+			position: 'bottom_left',
+			config: {
+				daysAhead: 1,
+				colored: true
+			}
 		},
 		{
 			module: "weather",
@@ -77,6 +85,17 @@ let config = {
 			}
 		},
 		{
+			module: "MMM-cryptocurrency",
+			position: "bottom_right",
+			config: {
+				apikey: 'e6e22dc5-1662-45f0-84d5-5b1c2ff28823',
+				currency: ['ethereum', 'bitcoin'],
+				displayType: 'logoWithChanges',
+				coloredLogos: true,
+				showGraphs: true
+			}
+		}
+		/*{
 			module: "newsfeed",
 			position: "bottom_bar",
 			config: {
@@ -91,7 +110,7 @@ let config = {
 				broadcastNewsFeeds: true,
 				broadcastNewsUpdates: true
 			}
-		},
+		},*/
 	]
 };
 
