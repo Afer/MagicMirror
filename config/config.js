@@ -76,6 +76,8 @@ let config = {
 				apiKey: "c4a826cd50cf92c85334dd0d79118481"
 			}
 		},
+		//git clone https://github.com/fewieden/MMM-NHL.git
+		//git clone https://github.com/matteodanelli/MMM-cryptocurrency.git
 		//const BASE_PLAYOFF_URL = 'https://api-web.nhle.com/v1/tournaments/playoffs?expand=round.series';
 		{
 			module: 'MMM-NHL',
