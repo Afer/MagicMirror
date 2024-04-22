@@ -54,14 +54,6 @@ let config = {
 			position: "middle_center"
 		},
 		{
-			module: 'MMM-NHL',
-			position: 'bottom_left',
-			config: {
-				daysAhead: 1,
-				colored: true
-			}
-		},
-		{
 			module: "weather",
 			position: "top_right",
 			config: {
@@ -82,6 +74,15 @@ let config = {
 				location: "Denver",
 				locationID: "5419384", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
 				apiKey: "c4a826cd50cf92c85334dd0d79118481"
+			}
+		},
+		//const BASE_PLAYOFF_URL = 'https://api-web.nhle.com/v1/tournaments/playoffs?expand=round.series';
+		{
+			module: 'MMM-NHL',
+			position: 'bottom_left',
+			config: {
+				daysAhead: 1,
+				colored: true
 			}
 		},
 		{
