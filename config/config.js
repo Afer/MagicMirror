@@ -24,7 +24,7 @@ let config = {
 	units: "imperial",
 
 	modules: [
-		{
+		/*{
 			module: "alert",
 		},
 		{
@@ -96,6 +96,18 @@ let config = {
 				displayType: 'logoWithChanges',
 				coloredLogos: true,
 				showGraphs: true
+			}
+		},*/
+		{
+			module: "MMM-FlashImage",
+			position: "fullscreen_below",
+			config: {
+				imagePath: "modules/MMM-FlashImage/images/image.png",
+				flashDuration: 2000, // 2 seconds
+				interval: 10000, // 1 minute
+				showClock: false,
+				clockFormat: "HH:mm:ss",
+				backgroundColor: "rgba(0, 0, 0, 0.8)"
 			}
 		}
 		/*{
