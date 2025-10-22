@@ -1,0 +1,70 @@
+/* MMM-FlashImage Styles */
+
+.mmm-flash-image-wrapper {
+    position: relative;
+}
+
+.mmm-flash-image-container {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.mmm-flash-image {
+    animation: scaleIn 0.3s ease-out;
+}
+
+.mmm-flash-clock {
+    animation: slideUp 0.5s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .mmm-flash-image {
+        max-width: 95vw !important;
+        max-height: 95vh !important;
+    }
+    
+    .mmm-flash-clock {
+        font-size: 1.5em !important;
+    }
+}
+
+/* Ensure the image appears above all other content */
+.mmm-flash-image-container {
+    pointer-events: none; /* Allow clicks to pass through when not flashing */
+}
+
+.mmm-flash-image-container:not(:empty) {
+    pointer-events: auto; /* Enable interactions when flashing */
+}
